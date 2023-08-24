@@ -1,4 +1,4 @@
-# Custom Pagination Component**
+# Custom Pagination Component
 
 The CustomPagination component is a React component designed to provide a user-friendly pagination feature for lists or search results. It allows users to navigate through multiple pages of content and adjust the number of items displayed per page.
 
