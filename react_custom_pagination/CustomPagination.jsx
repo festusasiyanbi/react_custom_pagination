@@ -11,10 +11,9 @@ const CustomPagination = ({
   handlePageChange,
 }) => {
   return (
-    <div className='search-result-pagination'>
-      <div className='show-rows relative w-[100px] bg-[#f1f1f1] p-2 rounded-lg cursor-pointer'>
+    <div>
+      <div>
         <select
-          className='text-sm bg-transparent outline-none'
           value={rowsPerPage}
           onChange={(e) => setRowsPerPage(Number(e.target.value))}
         >
@@ -25,13 +24,10 @@ const CustomPagination = ({
         </select>
         <FontAwesomeIcon
           icon={faCaretDown}
-          className='ml-[2px] absolute top-3 right-3'
         />
       </div>
-
-      <div className='search-pagination'>
+      <div>
         <button
-          className='pagination-btn prev'
           onClick={() => handlePageChange(currentPage - 1)}
           disabled={currentPage === 1}
         >
@@ -40,16 +36,12 @@ const CustomPagination = ({
         {Array.from({ length: totalPages }, (_, index) => (
           <button
             key={index}
-            className={`pagination-btn ${
-              currentPage === index + 1 ? 'active-pagination-btn' : ''
-            }`}
             onClick={() => handlePageChange(index + 1)}
           >
             {index + 1}
           </button>
         ))}
         <button
-          className='pagination-btn next'
           onClick={() => handlePageChange(currentPage + 1)}
           disabled={currentPage === totalPages}
         >
