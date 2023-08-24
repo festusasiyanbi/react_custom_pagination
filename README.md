@@ -6,7 +6,7 @@ The CustomPagination component is a React component designed to provide a user-f
 
 To use the `CustomPagination` component in your project, you need to provide several props:
 
-1. currentPage (required): The current active page number.
+1. `currentPage` (required): The current active page number.
 2. `totalPages` (required): The total number of pages in the paginated content.
 3. `rowsPerPage` (required): The number of items displayed per page.
 4. `setRowsPerPage` (required): A function to update the number of items displayed per page.
